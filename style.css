@@ -1,0 +1,207 @@
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: #758389;
+    margin: 0;
+    padding: 0;
+    font-family: "Cinzel Decorative", cursive;
+}
+
+
+/*Styling the heading*/
+
+.header {
+    text-align: center;
+    width: 100%;
+    height: 250px;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+.logo {
+    height: 100px;
+}
+
+
+/*Styling the navbar*/
+
+.info-nav {
+    width: 100%;
+    height: 40px;
+    background-color: #b0b0ae;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+
+.nav_list {
+    list-style: none;
+    display: flex;
+}
+
+.nav_item {
+    flex: 1;
+    justify-content: center;
+}
+
+
+/*Styling the main sections of the portfolio*/
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: serif;
+    font-size: 1.2em;
+    width: 100%;
+}
+
+.photo {
+    width: 100%;
+    height: 650px;
+}
+
+.photo>img {
+    width: 100%;
+    height: 100%;
+}
+
+#about {
+    border: 1px solid;
+    border-radius: 10px;
+    margin: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+    background-color: #B8BDC7;
+}
+
+
+
+#contact-me {
+    width: 100%;
+    height: 40px;
+    border: 1px solid;
+    border-radius: 10px;
+    margin: 15px;
+    padding-left: 20px;
+    padding-top: 15px;
+    text-align: center;
+    background-color: #b0b0ae;
+    display: flex;
+    justify-content: space-around;
+}
+
+.fa-facebook-f {
+    color: blue;
+}
+
+.fa-twitter {
+    color: blue;
+}
+
+.fa-linkedin {
+    color: blue;
+}
+
+#projects {
+    width: 100%;
+    height: 100%;
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: #5B6671;
+    color: lightgrey;
+    margin: 15px;
+    font-family: "Cinzel Decorative", cursive;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image {
+    width: 250px;
+    height: 250px;
+    flex: 1;
+}
+
+figcaption {
+    color: white;
+}
+
+.footer {
+    width: 100%;
+    height: 40px;
+    background-color: #222222;
+    color: lightgrey;
+    border: 1px solid;
+    border-radius: 10px;
+    font-family: "Cinzel Decorative", cursive;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+
+/*Making braekpoint to the navbar to adjust the contents and ordering the sections*/
+
+@media screen and (max-width: 600px) {
+    .nav_item {
+        font-size: .8em;
+        padding-right: 35px;
+    }
+    #about {
+        order: 1;
+    }
+    #contact-me {
+        order: 2;
+    }
+    .footer {
+        font-size: .75em;
+    }
+}
+
+
+/*Ordering the sections*/
+
+@media screen and (min-width: 601px) {
+    #about {
+        order: 0;
+    }
+    #projects {
+        order: 1;
+    }
+    #contact-me {
+        order: 2;
+    }
+}
+
+
+/*Making breakpoints to make the portfolio responsive*/
+
+@media screen and (max-width: 1450px) {
+    .image {
+        width: 150px;
+        height: 150px;
+    }
+    figcaption {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .image {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #projects {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .image {
+        width: 220px;
+        height: 220px;
+    }
+}
